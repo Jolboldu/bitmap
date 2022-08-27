@@ -73,7 +73,7 @@ function parseBitmapRow(lengthOfRow: number, row: string, arrayOfPixels: number[
 function printSolution(bitmap:number[][]) {
     for(let i = 0; i < bitmap.length; ++i) {
         let row = bitmap[i][0].toString();
-        for(let j = 0; j < bitmap[i].length; ++j) {
+        for(let j = 1; j < bitmap[i].length; ++j) {
             row = row + ' ' + bitmap[i][j].toString();
         }
         console.log(row);
